@@ -4,6 +4,15 @@
     phone: string;
     age: number;
   }
+
+  interface Colleague{
+    name: string;
+    department: string;
+    contact: {
+      email: string;
+      extension: number;
+    }
+  }
   
   const friend1: Friend = {
     name: "Paul Fleming",
@@ -22,7 +31,7 @@
   
   
   //   -------------------
-  const colleague1 = {
+  const colleague1: Colleague = {
     name: "Ralph Graham",
     department: "Engineering",
     contact: {
@@ -31,7 +40,7 @@
     },
   };
   
-  const colleague2 = {
+  const colleague2: Colleague = {
     name: "Patti Burke",
     department: "Finance",
     contact: {
@@ -40,7 +49,7 @@
     },
   };
   
-  const colleague3 = {
+  const colleague3: Colleague = {
     name: "Dean Sullivan",
     department: "HR",
     contact: {
